@@ -16,8 +16,7 @@ df = pd.concat(map(pd.read_pickle, glob.glob('data/pickle/after iqr/******.pkl')
 
 3. 특정 ```column```만 빼고 호출하고 싶을 때 :  ```index.difference```에 대한 [공식문서](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Index.difference.html) 
 
-   ![image-20211006131246290](C:\Users\AskStory\AppData\Roaming\Typora\typora-user-images\image-20211006131246290.png)
-
+   
 ```python
 md = md[md.columns.difference(['elec', 'date', ...])]
 ```
